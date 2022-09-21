@@ -1,10 +1,10 @@
-// union types
+// never will not return any value ,never can not have an end point
 
-const add = (num1: number | string, num2: number | string) => {
-  if (typeof num1 === "string" && typeof num2 === "string") return num1 + num2;
-  else if (typeof num1 === "number" && typeof num2 === "number")
-    return num1 + num2;
-};
+let func = (num1: number): void => {
+  const result = num1
+  while (true) {
+    console.log('dsfs')
+  }
+}
 
-const result = add(21, 25);
-console.log(result);
+console.log(func(25))

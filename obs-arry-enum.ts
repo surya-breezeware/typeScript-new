@@ -2,8 +2,8 @@ const login_id = 'surya@breezeware.net'
 const password = 'breeze123'
 
 enum Role {
-  ADMIN,
-  USER,
+  ADMIN = 'Admin',
+  USER = 'user',
 }
 
 const data: {
