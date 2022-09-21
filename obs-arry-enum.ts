@@ -1,30 +1,32 @@
-const login_id = 'surya@breezeware.net'
-const password = 'breeze123'
+const login_id = "surya@breezeware.net";
+const password = "breeze123";
 
 enum Role {
-  ADMIN = 'Admin',
-  USER = 'user',
+  ADMIN = "Admin",
+  USER = "user",
 }
 
 const data: {
-  login_id: string
-  password: string
-  hobbies: any[]
-  role: Role
+  login_id: string;
+  password: string;
+  hobbies: any[];
+  role: Role;
 } = {
   // const data = {
   login_id: login_id,
   password: password,
-  hobbies: ['sports', 'cooking'],
+  hobbies: ["sports", "cooking"],
   role: Role.ADMIN,
-}
-data.hobbies[1] = 2
+};
+data.hobbies[1] = 2;
 
 // Alliases
 // type loginData = { data }
 
-const login = (loginData) => {
-  console.log(loginData)
-}
+// const login = (loginData:) => {
+//   console.log(loginData);
+// };
 
-login(data)
+// login(data);
+
+export {};
