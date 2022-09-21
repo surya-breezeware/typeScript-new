@@ -1,30 +1,10 @@
-const login_id = 'surya@breezeware.net'
-const password = 'breeze123'
+// union types
 
-enum Role {
-  ADMIN,
-  USER,
-}
+const add = (num1: number | string, num2: number | string) => {
+  if (typeof num1 === "string" && typeof num2 === "string") return num1 + num2;
+  else if (typeof num1 === "number" && typeof num2 === "number")
+    return num1 + num2;
+};
 
-const data: {
-  login_id: string
-  password: string
-  hobbies: any[]
-  role: Role
-} = {
-  // const data = {
-  login_id: login_id,
-  password: password,
-  hobbies: ['sports', 'cooking'],
-  role: Role.ADMIN,
-}
-data.hobbies[1] = 2
-
-// Alliases
-// type loginData = { data }
-
-const login = (loginData) => {
-  console.log(loginData)
-}
-
-login(data)
+const result = add(21, 25);
+console.log(result);
